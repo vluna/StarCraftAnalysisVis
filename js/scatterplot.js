@@ -20,6 +20,8 @@ var axis = d3.svg.axis().orient("left");
 var parallelCoordinate,
 	scatterplot;
 
+var pointCount= -1;
+
 // Holds the dimensions used for tooltips
 var a = 0,
 	b = 1,
@@ -33,6 +35,7 @@ var svg = d3.select("#scatterplot")
 			.attr("height", height)
 			.attr("width", width)
 			.append("svg:g")
+			.attr("class", "scatterplot");
 
 // Container for parallel coordinate
 var svg2 = d3.select("#parallelCoordinate")
