@@ -1,0 +1,61 @@
+body {
+	font: 12px sans-serif;
+}
+
+h1 {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.axis path,
+.axis line {
+	fill:none;
+	stroke:black;
+	shape-rendering: crispEdges;
+}
+
+.axis text{
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+.parallelCoordinate path{
+	fill:none;
+	stroke-width:1.5px;
+}
+
+.parallelCoordinate path.fade{
+	stroke: #000;
+	stroke-opacity: .05;
+}
+
+.scatterplot circle.fade{
+	fill: #000;
+	fill-opacity:.05;
+}
+
+#scatterplot{
+   float: left;
+}
+
+#parallelCoordinate{
+	float: left;
+}
+
+#leagueOptions{
+	font-size: 14px;
+}
+
+.tooltip {   
+	display: none;
+	position: absolute;           
+  	text-align: center; 
+  	padding-top: 5px;           
+	width: 120px;                  
+	height: 95px;                 
+	font: 12px sans-serif;  
+	background: #FF9500;   
+	color: white;
+	border-radius: 8px; 
+}
+
